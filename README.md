@@ -1,5 +1,8 @@
 [![Build Status](https://travis-ci.org/acquia/lightning.svg?branch=8.x-1.x)](https://travis-ci.org/acquia/lightning)
 
+**This is an unsupported early development branch that runs HEAD of Core 8.5.x.
+It has known regressions including missing support for inherited profiles.** 
+
 # Drupal Lightning
 Lightning's mission is to enable developers to create great authoring
 experiences and empower editorial teams.
