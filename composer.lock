@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2be593c846f10326061c40561058ce66",
+    "content-hash": "7fe9f7933b5d434d175f6a319cd0272d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1298,6 +1298,7 @@
             "type": "drupal-core",
             "extra": {
                 "patches_applied": {
+                    "1356276 - Allow profiles to provide a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/1356276-408--8.4.4.patch",
                     "2880374 - Experimental modules should not have warnings after being installed": "https://www.drupal.org/files/issues/2880374-remove-experimental-warnings-6.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
@@ -2463,17 +2464,11 @@
         },
         {
             "name": "drupal/lightning_core",
-            "version": "1.0.0-alpha2",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/lightning_core",
-                "reference": "8.x-1.0-alpha2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_core-8.x-1.0-alpha2.zip",
-                "reference": "8.x-1.0-alpha2",
-                "shasum": "4c783ac6b959a086a33e9196e1e13f9d692cd693"
+                "reference": "84eaa6dff4739b0dfc505b282d215288cbfe15c5"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
@@ -2481,7 +2476,7 @@
                 "drupal/acquia_connector": "^1.1",
                 "drupal/config_update": "^1.5.0",
                 "drupal/contact_storage": "^1.0",
-                "drupal/core": "~8.4.3",
+                "drupal/core": "~8.4.4",
                 "drupal/features": "^3.0",
                 "drupal/metatag": "^1.0",
                 "drupal/pathauto": "^1.0",
@@ -2500,8 +2495,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2",
-                    "datestamp": "1515082985",
+                    "version": "8.x-1.0-alpha1+2-dev",
+                    "datestamp": "1515006785",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2532,9 +2527,8 @@
                 },
                 "patches": {
                     "drupal/core": {
-                        "1356276 - Allow profiles to provide a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/1356276-408--8.4.3.patch",
+                        "1356276 - Allow profiles to provide a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/1356276-408--8.4.4.patch",
                         "2880374 - Experimental modules should not have warnings after being installed": "https://www.drupal.org/files/issues/2880374-remove-experimental-warnings-6.patch",
-                        "2880445 - Config sync should not throw a warning when not being writable": "https://www.drupal.org/files/issues/2880445-remove-config-write-warning-2.patch",
                         "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                         "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
                         "2883813 - Move File/Image media type into Standard once Media is stable": "https://www.drupal.org/files/issues/2883813-27.patch",
@@ -2582,7 +2576,8 @@
             "homepage": "https://www.drupal.org/project/lightning_core",
             "support": {
                 "source": "http://cgit.drupalcode.org/lightning_core"
-            }
+            },
+            "time": "2018-01-04T17:43:29+00:00"
         },
         {
             "name": "drupal/lightning_layout",
@@ -11665,6 +11660,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/lightning_core": 20,
         "drupal/media_entity_generic": 20,
         "acquia/lightning_dev": 20
     },
